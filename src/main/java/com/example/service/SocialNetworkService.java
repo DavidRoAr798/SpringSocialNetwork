@@ -1,6 +1,10 @@
-package com.example;
+package com.example.service;
 
 
+import com.example.domain.Pareja;
+import com.example.domain.Persona;
+import com.example.repository.ParejaRepository;
+import com.example.repository.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
