@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface PersonaRepository extends JpaRepository<Persona,Long> {
 
-    List<Persona> findByNombre(String nombre);
+    Persona findByNombre(String nombre);
 
     List<Persona> findByNombreAndApellido (String nombre, String apellido);
 

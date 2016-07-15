@@ -64,11 +64,7 @@ public class Persona {
 
         Persona persona = (Persona) o;
 
-        if (getId() != null ? !getId().equals(persona.getId()) : persona.getId() != null) return false;
-        if (getNombre() != null ? !getNombre().equals(persona.getNombre()) : persona.getNombre() != null) return false;
-        if (getApellido() != null ? !getApellido().equals(persona.getApellido()) : persona.getApellido() != null)
-            return false;
-        return getAge() != null ? getAge().equals(persona.getAge()) : persona.getAge() == null;
+        return getId() != null ? getId().equals(persona.getId()) : persona.getId() == null;
 
     }
 
