@@ -29,10 +29,13 @@ public class SocialNetworkService {
 
     public void addPersona(Persona persona) {
 
+        //TODO: falta verificar que la persona no exista, a traves de la anotacion para que Nombre y Apellidos sean univocos
         personaRepository.save(persona);
     }
 
     public void addPareja(Persona p1, Persona p2) {
+
+        //TODO: falta verificar que ninguna de las dos personas forme parte de otra pareja
 
         Pareja pareja = new Pareja(p1, p2);
         parejaRepository.save(pareja);
