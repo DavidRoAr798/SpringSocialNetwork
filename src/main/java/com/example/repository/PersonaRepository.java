@@ -9,10 +9,10 @@ public interface PersonaRepository extends JpaRepository<Persona,Long> {
 
     Persona findByNombre(String nombre);
 
-    List<Persona> findByNombreAndApellido (String nombre, String apellido);
+    //List<Persona> findByNombreAndApellido (String nombre, String apellido);
 
-    List<Persona> findByNombreOrApellido (String nombre, String apellido);
+    //List<Persona> findByNombreOrApellido (String nombre, String apellido);
 
-    List<Persona> findByAgeGreaterThanEqual (Integer age);
+    // List<Persona> findByAgeGreaterThanEqual (Integer age);
 
 }
